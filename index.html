@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Calculadora</title>
+</head>
+
+<!--Content init-->
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">
+                    <h1>CALCULADORA</h1>
+                </span>
+            </div>
+        </nav>
+        <br>
+        <hr class="bg-light border-2 border-top">
+
+            <div class="row g-3">
+
+                <div class="col-sm-4">
+                    <input id="operador" type="text" class="form-control" placeholder="Digite um número"
+                        aria-label="Digite um número">
+                </div>
+
+                <div class="col-sm-4">
+                    <select id="operacao" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>--Selecione uma operação</option>
+                        <option value="1">Adição</option>
+                        <option value="2">Subtração</option>
+                        <option value="3">Multiplicação</option>
+                        <option value="4">Divisão</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-4">
+                    <input id="operando" type="text" class="form-control" placeholder="Digite um número"
+                        aria-label="Digite um número">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-sm-8">
+                </div>
+                <div class="col-sm-4" id="calcular">
+                    <input onclick="Calcular()" class="btn btn-primary" type="button" value="Calcular">
+                </div>
+            </div>
+            <br><br>
+            
+            <div class="row g-3">
+                <div class="col-sm-12">
+                    Resultado:
+                    <input id="resultado" type="text" class="form-control" disabled>
+                </div>
+            </div>    
+    </div>
+
+    <!--Bootstrap JavaScript-->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/scrypt-calculadora-recode.js"></script>
+
+</body>
+
+</html>
